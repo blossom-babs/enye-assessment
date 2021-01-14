@@ -1,0 +1,43 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+
+
+  // ipads
+  @media (max-width: 800px) {
+    //768
+    grid-template-columns: repeat(2, 1fr)
+  }
+
+  // smaller screens
+  @media (max-width: 500px) {
+    //768
+    grid-template-columns: 1fr
+  }
+
+  &__card {
+    border-top: 0.2px solid #888;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom: 0.2px solid #888;
+
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(238, 238, 238, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(238, 238, 238, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(238, 238, 238, 0.75);
+
+    padding: 2rem 0;
+
+  }
+
+  &__title {
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+
+  &__content {
+    line-height: 2.5;
+
+  }
+
+}
